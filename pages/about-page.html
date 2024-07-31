@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+     <!-- Font chữ Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="../style/styleHome.css">
+    <link rel="stylesheet" href=".././style/styleAbout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="site-header" class="fixed-top main-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <h1>
+                    <a class="navbar-brand" href="#">
+                        <i class="fa-solid fa-align-right text-success"></i>
+                        Corp Vision
+                        <span class="logo">Vision to your Future</span>
+                    </a>
+                </h1>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
+                    aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-page.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services-page.html">Services</a>
+                        </li>
+                        <li class="nav-item dropdown menu-item">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="#">Elements Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-page.html">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Search -->
+                    <div class="header-search HeaderSearch">
+                        <div class="control mr-3">
+                            <div class="btn-material">
+                                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                            </div>
+                        </div>
+                        <!-- full screen form controls -->
+                        <i class="fa-solid fa-xmark icon-close"></i>
+                        <form action="./index.html" method="GET" class="search-input">
+                            <input class="input-search" name="s" placeholder="Start Typing" type="text">
+                        </form>
+                    </div>
+                    <!-- Dark And Light Mode -->
+                    <div class="mobile-position text-center DarkandLight">
+                        <nav class="navigation">
+                            <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                    <input type="checkbox" id="checkbox">
+                                    <div class="mode-container" id="switchButton" title="Click to switch theme">
+                                        <i class="gg-sun"></i>
+                                        <i class="gg-moon"></i>
+                                    </div>
+                                </label>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- About Us -->
+    <div class="embed-image">
+      <h1 class="text-center text-white">About us</h1>
+      <p class="text-center text-light">
+        Experience you can trust, service you can count on.
+      </p>
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Introduction -->
+    <div class="row m-5">
+      <div class="col">
+        <div class="left-side">
+          <img
+            src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/about2.jpg"
+            alt="hinh anh"
+            height="500px"
+          />
+        </div>
+      </div>
+      <div class="col">
+        <div class="right-side">
+          <div class="fw-bold text-light-emphasis">ABOUT OUR COMPANY</div>
+          <h3 class="fw-bold">
+            We are the next generation of the business world, creative solutions
+          </h3>
+          <h4>
+            Over 25 years, We complete every project with extra care as customer
+            needs.
+          </h4>
+          <div>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Non quae, fugiat consequatur
+            voluptatem ad.
+          </div>
+          <div class="btn-hang">
+            <div class="read-btn">Read More</div>
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="#00a63f"
+                class="bi bi-play-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+                />
+                <path
+                  d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 blocks -->
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="three-side">
+        <div class="row" style="gap: 15px">
+          <div
+            class="col d-flex justify-content-center align-items-center"
+            style="
+              gap: 10px;
+              background: #f8f9fa;
+              padding: 20px;
+              border-radius: 8px;
+            "
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#00a63f"
+                class="bi bi-amd"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m.334 0 4.358 4.359h7.15v7.15l4.358 4.358V0zM.2 9.72l4.487-4.488v6.281h6.28L6.48 16H.2z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Perfect Design</div>
+              <div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center"
+            style="
+              gap: 10px;
+              background: #f8f9fa;
+              padding: 20px;
+              border-radius: 8px;
+            "
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#00a63f"
+                class="bi bi-hand-thumbs-up-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Carefully Planned</div>
+              <div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+              </div>
+            </div>
+          </div>
+          <div
+            class="col d-flex justify-content-center align-items-center"
+            style="
+              gap: 10px;
+              background: #f8f9fa;
+              padding: 20px;
+              border-radius: 8px;
+            "
+          >
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#00a63f"
+                class="bi bi-alt"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1 13.5a.5.5 0 0 0 .5.5h3.797a.5.5 0 0 0 .439-.26L11 3h3.5a.5.5 0 0 0 0-1h-3.797a.5.5 0 0 0-.439.26L5 13H1.5a.5.5 0 0 0-.5.5m10 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5"
+                />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Smartly Execute</div>
+              <div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Design -->
+    <div style="background-color: #f8f9fa">
+      <div
+        class="container py-lg-5 py-md-4 py-2"
+        style="background-color: #f8f9fa"
+      >
+        <div class="row">
+          <div
+            class="col"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 20px;
+              justify-content: center;
+            "
+          >
+            <div class="fw-bold text-light-emphasis">
+              WEB DESIGN AND DIGITAL MARKETING
+            </div>
+            <h3 class="fw-bold">
+              We think strategy, UX design, and web development
+            </h3>
+            <div style="display: flex">
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <div class="number">1200+</div>
+                <div class="text-second-intro">Happy Clients</div>
+                <div>
+                  We help our clients increase profits by increasing their
+                  visibility online.
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <div class="number">13k+</div>
+                <div class="text-second-intro">Completed projects</div>
+                <div>
+                  We help our clients increase profits by increasing their
+                  visibility online.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+              "
+            >
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/ab.jpg"
+                alt="hingg ha"
+                height="400px"
+                style="border-radius: 8px"
+              />
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/ab2.jpg"
+                alt="hingg as"
+                height="400px"
+                style="border-radius: 8px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background Attchement -->
+    <div class="bg-atta">
+      <h2 class="text-center text-white" style="width: 60%; margin: 0 auto">
+        We are the next generation of the business world, creative solutions
+      </h2>
+      <p class="text-center text-light" style="width: 40%; margin: 0 auto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in culpa
+        qui officia sed deserunt mollit anim id est laborum mollit anim id est
+        nulla.
+      </p>
+      <div class="play-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="white"
+          class="bi bi-play-circle"
+          viewBox="0 0 16 16"
+          onclick="showPopup()"
+        >
+          <path
+            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+          />
+          <path
+            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"
+          />
+        </svg>
+      </div>
+      <div class="popup-video" id="popupVideo">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/o6R95gblskQ"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+    <!-- Team -->
+    <div class="container py-lg-5 py-md-4 py-2 text-center">
+      <div class="fw-bold text-light-emphasis">OUR PROFESSIONALS</div>
+      <h3 class="fw-bold mb-5">Meet the Team</h3>
+      <div class="row team-row justify-content-center">
+        <div class="col-lg-3 col-sm-6 team-wrap">
+          <div class="team-member text-center">
+            <div class="team-img">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team1.jpg"
+                alt="ava"
+              />
+              <div class="overlay">
+                <div class="team-details text-center">
+                  <p>
+                    Our web design team will spend time with our digital
+                    marketing team.
+                  </p>
+                  <div class="socials mt-4">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-facebook"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-twitter-x"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.920l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://google.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-google"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h6>Amelia Jessica</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-sm-0 mt-5">
+          <div class="team-member text-center">
+            <div class="team-img">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team2.jpg"
+                alt="ava"
+              />
+              <div class="overlay">
+                <div class="team-details text-center">
+                  <p>
+                    Our web design team will spend time with our digital
+                    marketing team.
+                  </p>
+                  <div class="socials mt-4">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-facebook"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-twitter-x"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.920l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://google.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-google"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h6>Amelia Jessica</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
+          <div class="team-member text-center">
+            <div class="team-img">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
+                alt="ava"
+              />
+              <div class="overlay">
+                <div class="team-details text-center">
+                  <p>
+                    Our web design team will spend time with our digital
+                    marketing team.
+                  </p>
+                  <div class="socials mt-4">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-facebook"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-twitter-x"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.920l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://google.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-google"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h6>Amelia Jessica</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
+          <div class="team-member text-center">
+            <div class="team-img">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team4.jpg"
+                alt="ava"
+              />
+              <div class="overlay">
+                <div class="team-details text-center">
+                  <p>
+                    Our web design team will spend time with our digital
+                    marketing team.
+                  </p>
+                  <div class="socials mt-4">
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-facebook"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-twitter-x"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.920l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://google.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-google"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com/w3layouts/">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="white"
+                        class="bi bi-envelope"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h6>Amelia Jessica</h6>
+            </a>
+            <p>Designer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Choose Us -->
+    <div style="background-color: #f8f9fa">
+      <div class="py-lg-5 py-md-4">
+        <div class="container">
+          <div class="title-content text-center">
+            <div class="fw-bold text-light-emphasis">WHY CHOOSE US</div>
+            <h3 class="fw-bold">
+              People choose us because we serve the best for everyone
+            </h3>
+          </div>
+          <div class="content-info-in row mt-5 pt-lg-5">
+            <div class="content-left col-lg-6">
+              <div class="row content4-right-grids mb-sm-5 mb-4">
+                <div
+                  class="col-2"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      border: 1px solid green;
+                      padding: 20px;
+                      border-radius: 8px;
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="green"
+                      class="bi bi-briefcase"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="col-10 content4-right-info pl-md-5 pl-4">
+                  <h6>Planning your business</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                    aperiam sequi optio adipisicing.
+                  </p>
+                </div>
+              </div>
+              <div class="row content4-right-grids mb-sm-5 mb-4">
+                <div
+                  class="col-2"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      border: 1px solid red;
+                      padding: 20px;
+                      border-radius: 8px;
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="red"
+                      class="bi bi-search"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="col-10 content4-right-info pl-md-5 pl-4">
+                  <h6>Doing research for your clients</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                    aperiam sequi optio adipisicing.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-right col-lg-6 pl-lg-4 mt-lg-0 mt-2">
+              <div class="row content4-right-grids mb-sm-5 mb-4">
+                <div
+                  class="col-2"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      border: 1px solid black;
+                      padding: 20px;
+                      border-radius: 8px;
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="black"
+                      class="bi bi-gear"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
+                      />
+                      <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="col-10 content4-right-info pl-md-5 pl-4">
+                  <h6>Create business process</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                    aperiam sequi optio adipisicing.
+                  </p>
+                </div>
+              </div>
+              <div class="row content4-right-grids">
+                <div
+                  class="col-2"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                  "
+                >
+                  <span
+                    style="
+                      border: 1px solid orange;
+                      padding: 20px;
+                      border-radius: 8px;
+                    "
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="30"
+                      height="30"
+                      fill="orange"
+                      class="bi bi-graph-up"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div class="col-10 content4-right-info pl-md-5 pl-4">
+                  <h6>We make the best strategies</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet,Ea consequuntur illum facere
+                    aperiam sequi optio adipisicing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End -->
+    <div class="container py-lg-5 py-md-4 py-2">
+      <div class="row d-flex gap-5">
+        <div
+          class="col-sm d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <h3 class="fw-bold">
+            Let's talk about your project and see how we can work together
+          </h3>
+          <div>
+            Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore nisi
+            esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+          </div>
+        </div>
+        <div
+          class="col-sm d-flex flex-row justify-content-center align-items-center"
+        >
+          <a href="#" class="start-btn">
+            Get started on a project
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg> </span
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function showPopup() {
+        document.getElementById("popupVideo").style.display = "flex";
+      }
+      document
+        .getElementById("popupVideo")
+        .addEventListener("click", function () {
+          this.style.display = "none";
+        });
+    </script>
+  </body>
+</html>

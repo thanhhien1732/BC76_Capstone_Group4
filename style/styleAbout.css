@@ -1,0 +1,221 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.embed-image {
+  background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  position: relative;
+  z-index: 0;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  background: rgba(29, 42, 55, 0.7);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.btn-hang {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.read-btn {
+  background-color: #00a63f;
+  padding: 15px 50px;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.read-btn:hover {
+  background-color: #23915e;
+}
+
+.intro-text {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.number {
+  font-weight: bold;
+  font-size: 20px;
+  color: #00a63f;
+}
+
+.text-second-intro {
+  font-weight: bold;
+}
+
+.bg-atta {
+  background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/bg1.jpg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-items: center;
+  padding: 4rem;
+  gap: 20px;
+}
+
+.play-btn {
+  text-align: center;
+}
+
+.bi-play-circle:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  transition: 0.4s ease-in-out;
+}
+
+.popup-video {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.popup-video iframe {
+  width: 80%;
+  height: 80%;
+}
+
+.start-btn {
+  padding: 15px 50px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 600;
+  background-color: #00a63f;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.start-btn:hover {
+  background-color: #23915e;
+}
+
+/* pic */
+
+.team-member,
+.team-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-img img {
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  width: 100%;
+}
+
+.overlay {
+  background-color: rgba(20, 20, 20, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+
+.team-details {
+  opacity: 0;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  padding: 10%;
+  overflow: hidden;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+.team-details p {
+  color: #fff;
+}
+
+.team-member:hover .overlay {
+  opacity: 0.6;
+}
+
+.team-member:hover .team-details {
+  opacity: 1;
+  bottom: 50%;
+  transform: translateY(50%);
+}
+
+.team-member a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+.team-member p {
+  color: #abb8c3;
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.team-member a:hover {
+  color: #00a63f;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials a {
+  text-decoration: none;
+}
+
+.title-content {
+  max-width: 800px;
+  margin: auto;
+}
