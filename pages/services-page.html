@@ -1,591 +1,677 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Service</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-     <!-- Font chữ Jost -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-         rel="stylesheet">
- 
-     <!-- FontAwesome 6.2.0 CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
- 
-     <!-- (Optional) Use CSS or JS implementation -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-         integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href=".././style/styleService.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="site-header" class="fixed-top main-header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <h1>
-                    <a class="navbar-brand" href="#">
-                        <i class="fa-solid fa-align-right text-success"></i>
-                        Corp Vision
-                        <span class="logo">Vision to your Future</span>
-                    </a>
-                </h1>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-                    aria-label="Toggle Navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav mx-lg-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/about-page.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/services-page.html">Services</a>
-                        </li>
-                        <li class="nav-item dropdown menu-item">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Pages</a>
 
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                                <li><a class="dropdown-item" href="#">404 Page</a></li>
-                                <li><a class="dropdown-item" href="#">Landing Page</a></li>
-                                <li><a class="dropdown-item" href="#">Elements Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact-page.html">Contact</a>
-                        </li>
-                    </ul>
-                    <!-- Search -->
-                    <div class="header-search HeaderSearch">
-                        <div class="control mr-3">
-                            <div class="btn-material">
-                                <i class="fa-solid fa-magnifying-glass icon-search"></i>
-                            </div>
-                        </div>
-                        <!-- full screen form controls -->
-                        <i class="fa-solid fa-xmark icon-close"></i>
-                        <form action="./index.html" method="GET" class="search-input">
-                            <input class="input-search" name="s" placeholder="Start Typing" type="text">
-                        </form>
-                    </div>
-                    <!-- Dark And Light Mode -->
-                    <div class="mobile-position text-center DarkandLight">
-                        <nav class="navigation">
-                            <div class="theme-switch-wrapper">
-                                <label class="theme-switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox">
-                                    <div class="mode-container" id="switchButton" title="Click to switch theme">
-                                        <i class="gg-sun"></i>
-                                        <i class="gg-moon"></i>
-                                    </div>
-                                </label>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+<head>
+  <link rel="shortcut icon" href="../image/home/logo1.png" type="image/x-icon">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!-- Font chữ Jost -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- (Optional) Use CSS or JS implementation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="../style/styleHome.css">
+  <link rel="stylesheet" href=".././style/styleService.css" />
+</head>
+
+<body>
+  <!-- Right Sidebar -->
+  <div class="pull-right toggle-right-sidebar">
+    <i class="fa-solid fa-angles-right"></i>
+  </div>
+  <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
+    <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
+
+      <div id="DemoBar" class="demo-bar">
+        <div class="demo-btns">
+          <a href="https://w3layouts.com/?p=4763800000032896">
+            <span class="icon icon-back">
+              <i class="fa-solid fa-arrow-left"></i>
+            </span>
+            <span class="icon icon-text">Back</span>
+          </a>
+          <a href="https://w3layouts.com/?p=4763800000032896">
+            <span class="icon icon-download">
+              <i class="fa-solid fa-download"></i>
+            </span>
+            <span class="icon icon-text">Download</span>
+          </a>
+          <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896" class="no-margin-bottom-mobile">
+            <span class="icon icon-buy">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span class="icon icon-text">Buy</span>
+          </a>
+        </div>
+      </div>
+      <div class="right-sidebar-panel-content animate__animated animate__fadeInRight" tabindex="5003"
+        style="overflow: hidden; outline: none;">
+      </div>
+    </div>
+  </div>
+
+  <header id="site-header" class="fixed-top main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <h1>
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-align-right text-success"></i>
+            Corp Vision
+            <span class="logo">Vision to your Future</span>
+          </a>
+        </h1>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-page.html">About</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="./services-page.html">Services</a>
+            </li>
+            <li class="nav-item dropdown menu-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Pages</a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                <li><a class="dropdown-item" href="#">Elements Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-page.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Search -->
+          <div class="header-search HeaderSearch">
+            <div class="control mr-3">
+              <div class="btn-material">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+              </div>
+            </div>
+            <!-- full screen form controls -->
+            <i class="fa-solid fa-xmark icon-close"></i>
+            <form action="./index.html" method="GET" class="search-input">
+              <input class="input-search" name="s" placeholder="Start Typing" type="text">
+            </form>
+          </div>
+          <!-- Dark And Light Mode -->
+          <div class="mobile-position text-center DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container" id="switchButton" title="Click to switch theme">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
             </nav>
+          </div>
         </div>
-    </header>
-    <div class="embed-image">
-      <h1 class="text-center text-white">Services</h1>
-      <p class="text-center text-light">
-        We work with bold brands that we believe in
-      </p>
-      <div class="hero-overlay"></div>
+      </nav>
     </div>
-    <!-- CHECK OUR SERVICES -->
-    <div style="background-color: #f8f9fa">
-      <div class="container py-lg-5 py-md-4 py-2 text-center">
-        <div class="fw-bold text-light-emphasis">CHECK OUR SERVICES</div>
-        <h3 class="fw-bold mb-5" style="width: 50%; margin: 0 auto">
-          Introduce our best and reliable services for all your business
-        </h3>
-        <div class="row d-flex flex-row justify-content-between">
-          <div class="col-lg-6" style="padding-left: 15px; padding-right: 15px">
-            <div style="padding: 45px 50px; background-color: white">
-              <img
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                alt="aaaa"
-                class="img-fluid mb-3"
-              />
-              <h3 class="fw-bold mb-md-4 mb-3">Product Design</h3>
-              <p>
-                Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
-                sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam
-                sit amet laoreet elit. non init magnaa velit, dolor eget ex.
-              </p>
-              <a href="" class="btn btn-style btn-primary mt-lg-4 mt-4"
-                >Know more</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-6 service-grid-right mt-lg-0">
-            <img
-              src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg"
-              alt="aaa"
-              height="380px"
-            />
+  </header>
+  <div class="embed-image">
+    <h1 class="text-center text-white">Services</h1>
+    <p class="text-center text-light">
+      We work with bold brands that we believe in
+    </p>
+    <div class="hero-overlay"></div>
+  </div>
+  <!-- CHECK OUR SERVICES -->
+  <div style="background-color: #f8f9fa">
+    <div class="container py-lg-5 py-md-4 py-2 text-center">
+      <div class="fw-bold text-light-emphasis">CHECK OUR SERVICES</div>
+      <h3 class="fw-bold mb-5" style="width: 50%; margin: 0 auto">
+        Introduce our best and reliable services for all your business
+      </h3>
+      <div class="row d-flex flex-row justify-content-between">
+        <div class="col-lg-6" style="padding-left: 15px; padding-right: 15px">
+          <div style="padding: 45px 50px; background-color: white">
+            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
+              alt="aaaa" class="img-fluid mb-3" />
+            <h3 class="fw-bold mb-md-4 mb-3">Product Design</h3>
+            <p>
+              Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
+              sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam
+              sit amet laoreet elit. non init magnaa velit, dolor eget ex.
+            </p>
+            <a href="" class="btn btn-style btn-primary mt-lg-4 mt-4">Know more</a>
           </div>
         </div>
-        <div class="row d-flex flex-row justify-content-between mt-4">
-          <div class="col-lg-6 service-grid-right mt-lg-0">
-            <img
-              src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg"
-              alt="aaa"
-              height="380px"
-            />
-          </div>
-          <div class="col-lg-6" style="padding-left: 15px; padding-right: 15px">
-            <div style="padding: 45px 50px; background-color: white">
-              <img
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
-                alt="aaaa"
-                class="img-fluid mb-3"
-              />
-              <h3 class="fw-bold mb-md-4 mb-3">E-commerce Design</h3>
-              <p>
-                Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
-                sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam
-                sit amet laoreet elit. non init magnaa velit, dolor eget ex.
-              </p>
-              <a href="" class="btn btn-style btn-primary mt-lg-4 mt-4"
-                >Know more</a
-              >
-            </div>
+        <div class="col-lg-6 service-grid-right mt-lg-0">
+          <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg" alt="aaa"
+            height="380px" />
+        </div>
+      </div>
+      <div class="row d-flex flex-row justify-content-between mt-4">
+        <div class="col-lg-6 service-grid-right mt-lg-0">
+          <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg" alt="aaa"
+            height="380px" />
+        </div>
+        <div class="col-lg-6" style="padding-left: 15px; padding-right: 15px">
+          <div style="padding: 45px 50px; background-color: white">
+            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
+              alt="aaaa" class="img-fluid mb-3" />
+            <h3 class="fw-bold mb-md-4 mb-3">E-commerce Design</h3>
+            <p>
+              Aurabitur id gravida risus. Fusce eget ex , ultricies nisi ac
+              sed, lacinia est. Quisque ut lectus, eros et, sed risus. Nullam
+              sit amet laoreet elit. non init magnaa velit, dolor eget ex.
+            </p>
+            <a href="" class="btn btn-style btn-primary mt-lg-4 mt-4">Know more</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS -->
-    <div>
-      <div class="container py-lg-5 py-md-4 py-2 text-center">
-        <div class="fw-bold text-light-emphasis">
-          BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
-        </div>
-        <h3 class="fw-bold" style="width: 50%; margin: 0 auto">
-          What industries we serve?
-        </h3>
-        <div class="mt-5">
-          <div class="row" style="gap: 15px">
-            <div
-              class="col d-flex justify-content-center"
-              style="
+  </div>
+  <!-- BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS -->
+  <div>
+    <div class="container py-lg-5 py-md-4 py-2 text-center">
+      <div class="fw-bold text-light-emphasis">
+        BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
+      </div>
+      <h3 class="fw-bold" style="width: 50%; margin: 0 auto">
+        What industries we serve?
+      </h3>
+      <div class="mt-5">
+        <div class="row" style="gap: 15px">
+          <div class="col d-flex justify-content-center" style="
                 gap: 10px;
                 background: #f8f9fa;
                 padding: 20px;
                 border-radius: 8px;
-              "
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-cash"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
-                  <path
-                    d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="intro-text">Investment Planning</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
-              </div>
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f" class="bi bi-cash"
+                viewBox="0 0 16 16">
+                <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+                <path
+                  d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+              </svg>
             </div>
-            <div
-              class="col d-flex justify-content-center"
-              style="
-                gap: 10px;
-                background: #f8f9fa;
-                padding: 20px;
-                border-radius: 8px;
-              "
-            >
+            <div>
+              <div class="intro-text">Investment Planning</div>
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-file-earmark-text-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="intro-text">Commercial Projects</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
-              </div>
-            </div>
-            <div
-              class="col d-flex justify-content-center"
-              style="
-                gap: 10px;
-                background: #f8f9fa;
-                padding: 20px;
-                border-radius: 8px;
-              "
-            >
-              <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-bank2"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916zM12.375 6v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2M.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="intro-text">Banking & Finance</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
               </div>
             </div>
           </div>
-          <div class="row mt-3" style="gap: 15px">
-            <div
-              class="col d-flex justify-content-center"
-              style="
+          <div class="col d-flex justify-content-center" style="
                 gap: 10px;
                 background: #f8f9fa;
                 padding: 20px;
                 border-radius: 8px;
-              "
-            >
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f"
+                class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                <path
+                  d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1z" />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Commercial Projects</div>
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-copy"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="intro-text">Competitive Research</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
               </div>
             </div>
-            <div
-              class="col d-flex justify-content-center"
-              style="
+          </div>
+          <div class="col d-flex justify-content-center" style="
                 gap: 10px;
                 background: #f8f9fa;
                 padding: 20px;
                 border-radius: 8px;
-              "
-            >
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f" class="bi bi-bank2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916zM12.375 6v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zm-2.5 0v7h-1.25V6zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2M.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1z" />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Banking & Finance</div>
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-code-slash"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
-                  />
-                </svg>
-              </div>
-              <div>
-                <div class="intro-text">International Business</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
               </div>
             </div>
-            <div
-              class="col d-flex justify-content-center"
-              style="
+          </div>
+        </div>
+        <div class="row mt-3" style="gap: 15px">
+          <div class="col d-flex justify-content-center" style="
                 gap: 10px;
                 background: #f8f9fa;
                 padding: 20px;
                 border-radius: 8px;
-              "
-            >
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f" class="bi bi-copy"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1h1v1a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h1v1z" />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Competitive Research</div>
               <div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="30"
-                  height="30"
-                  fill="#00a63f"
-                  class="bi bi-bar-chart"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"
-                  />
-                </svg>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
               </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center" style="
+                gap: 10px;
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f" class="bi bi-code-slash"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">International Business</div>
               <div>
-                <div class="intro-text">Strategic Approach</div>
-                <div>
-                  Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
-                </div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center" style="
+                gap: 10px;
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+              ">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#00a63f" class="bi bi-bar-chart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z" />
+              </svg>
+            </div>
+            <div>
+              <div class="intro-text">Strategic Approach</div>
+              <div>
+                Amus a ligula quam tesque et ut justo, Duis sed dolor et amet.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Form -->
-    <div>
-      <div class="quote-info py-5">
-        <div class="container py-lg-5 py-md-4 py-2">
-          <div class="quote-grids-info row align-items-center">
-            <div class="quote-gd-left col-lg-6 pr-lg-5">
-              <h6 class="title-small text-light mb-2">INNOVATIVE TECHNOLOGY</h6>
-              <h3 class="title-big text-white">
-                We use latest technologies that are proven and practical
-              </h3>
-              <div class="mt-4">
-                <div class="quote-sec-info">
-                  <div class="appyl-sub-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="white"
-                      class="bi bi-map-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="appyl-sub-icon-info">
-                    <h5>Our Location:</h5>
-                    <p>
-                      Corp Vision, 343 marketing, #21 cravel 1st lane street, NY
-                      - 62617.
-                    </p>
-                  </div>
+  </div>
+  <!-- Form -->
+  <div>
+    <div class="quote-info py-5">
+      <div class="container py-lg-5 py-md-4 py-2">
+        <div class="quote-grids-info row align-items-center">
+          <div class="quote-gd-left col-lg-6 pr-lg-5">
+            <h6 class="title-small text-light mb-2">INNOVATIVE TECHNOLOGY</h6>
+            <h3 class="title-big text-white">
+              We use latest technologies that are proven and practical
+            </h3>
+            <div class="mt-4">
+              <div class="quote-sec-info">
+                <div class="appyl-sub-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-map-fill"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M16 .5a.5.5 0 0 0-.598-.49L10.5.99 5.598.01a.5.5 0 0 0-.196 0l-5 1A.5.5 0 0 0 0 1.5v14a.5.5 0 0 0 .598.49l4.902-.98 4.902.98a.5.5 0 0 0 .196 0l5-1A.5.5 0 0 0 16 14.5zM5 14.09V1.11l.5-.1.5.1v12.98l-.402-.08a.5.5 0 0 0-.196 0zm5 .8V1.91l.402.08a.5.5 0 0 0 .196 0L11 1.91v12.98l-.5.1z" />
+                  </svg>
                 </div>
-
-                <div class="quote-sec-info">
-                  <div class="appyl-sub-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="white"
-                      class="bi bi-telephone-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="appyl-sub-icon-info">
-                    <h5>Phone Numbers</h5>
-                    <p>
-                      <a href="tel:+142 5897555"> +142 5897555</a>,
-                      <a href="tel:+142 5897566"> +142 5897566</a>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="quote-sec-info">
-                  <div class="appyl-sub-icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="white"
-                      class="bi bi-envelope"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="appyl-sub-icon-info">
-                    <h5>Email Addresses</h5>
-                    <p>
-                      <a href="mailto:mail@company1.com" class="mail">
-                        mail@company1.com</a
-                      >,
-                      <a href="mailto:mail@company2.com" class="mail">
-                        mail@company2.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="quote-gd-right col-lg-6 mt-lg-0 mt-5 ServicesPageContactForm"
-            >
-              <div class="quote-form mx-auto">
-                <form action="" method="post">
-                  <h3 class="title-service mb-2">
-                    Lets talk about your project
-                  </h3>
-                  <p class="mb-4">
-                    We have made it easy for clients to reach us and get their
-                    solutions weaved
+                <div class="appyl-sub-icon-info">
+                  <h5>Our Location:</h5>
+                  <p>
+                    Corp Vision, 343 marketing, #21 cravel 1st lane street, NY
+                    - 62617.
                   </p>
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="w3lName"
-                      placeholder="Your Name*"
-                      required=""
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      name="w3lSender"
-                      placeholder="Email*"
-                      equired=""
-                    />
-                  </div>
-                  <div class="form-group mb-4">
-                    <textarea
-                      class="form-control"
-                      name="w3lMessage"
-                      placeholder="Message"
-                    ></textarea>
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-style btn-primary d-block submit"
-                  >
-                    Get Started
-                  </button>
-                </form>
+                </div>
+              </div>
+
+              <div class="quote-sec-info">
+                <div class="appyl-sub-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white"
+                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                  </svg>
+                </div>
+                <div class="appyl-sub-icon-info">
+                  <h5>Phone Numbers</h5>
+                  <p>
+                    <a href="tel:+142 5897555"> +142 5897555</a>,
+                    <a href="tel:+142 5897566"> +142 5897566</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="quote-sec-info">
+                <div class="appyl-sub-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-envelope"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                </div>
+                <div class="appyl-sub-icon-info">
+                  <h5>Email Addresses</h5>
+                  <p>
+                    <a href="mailto:mail@company1.com" class="mail">
+                      mail@company1.com</a>,
+                    <a href="mailto:mail@company2.com" class="mail">
+                      mail@company2.com</a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="hero-overlay"></div>
+          <div class="quote-gd-right col-lg-6 mt-lg-0 mt-5 ServicesPageContactForm">
+            <div class="quote-form mx-auto">
+              <form action="" method="post">
+                <h3 class="title-service mb-2">
+                  Lets talk about your project
+                </h3>
+                <p class="mb-4">
+                  We have made it easy for clients to reach us and get their
+                  solutions weaved
+                </p>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="w3lName" placeholder="Your Name*" required="" />
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="w3lSender" placeholder="Email*" equired="" />
+                </div>
+                <div class="form-group mb-4">
+                  <textarea class="form-control" name="w3lMessage" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-style btn-primary d-block submit">
+                  Get Started
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+    </div>
+  </div>
+  <!-- BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS 2 -->
+  <div style="background-color: #f8f9fa" class="mt-5">
+    <div class="container py-lg-5 py-md-4 py-2 text-center">
+      <div class="fw-bold text-light-emphasis">
+        BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
+      </div>
+      <h3 class="fw-bold" style="width: 50%; margin: 0 auto">
+        Services that create identities, build brands, and get results
+      </h3>
+      <div class="row main-cont-wthree-2 align-items-center justify-content-center mt-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="box-wrap">
+            <div>
+              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png" alt=""
+                class="img-fluid" />
+            </div>
+            <h4>
+              <a href="#url" class="title-head mb-3">Business Analysis </a>
+            </h4>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+              elit, dolor eget ex fermentum.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+          <div class="box-wrap">
+            <div>
+              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png" alt=""
+                class="img-fluid" />
+            </div>
+            <h4>
+              <a href="#url" class="title-head mb-3"> Project Reporting</a>
+            </h4>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+              elit, dolor eget ex fermentum.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+          <div class="box-wrap">
+            <div>
+              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon3.png" alt=""
+                class="img-fluid" />
+            </div>
+            <h4>
+              <a href="#url" class="title-head mb-3"> Security Enhanced</a>
+            </h4>
+            <p>
+              Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+              elit, dolor eget ex fermentum.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS 2 -->
-    <div style="background-color: #f8f9fa" class="mt-5">
-      <div class="container py-lg-5 py-md-4 py-2 text-center">
-        <div class="fw-bold text-light-emphasis">
-          BEAUTIFULLY CRAFTED CREATIVE SOLUTIONS
-        </div>
-        <h3 class="fw-bold" style="width: 50%; margin: 0 auto">
-          Services that create identities, build brands, and get results
-        </h3>
-        <div
-          class="row main-cont-wthree-2 align-items-center justify-content-center mt-5"
-        >
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="py-5">
+      <div class="container py-md-4">
+        <div class="row">
           <div class="col-lg-4 col-md-6">
-            <div class="box-wrap">
-              <div>
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <h4>
-                <a href="#url" class="title-head mb-3">Business Analysis </a>
-              </h4>
-              <p>
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit, dolor eget ex fermentum.
-              </p>
+            <div class="footer-logo mb-4">
+              <a class="navbar-brand" href="#">
+                <i class="fa-solid fa-align-right text-success"></i>
+                Corp Vision
+                <span class="logo">Vision to your Future</span>
+              </a>
+            </div>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper
+              attempufddfel. Lorem ipsum dolor sit amet Semper at elit team advisors.
+            </p>
+            <div class="footer-social mt-md-4 mt-3">
+              <a href="https://www.facebook.com/w3layouts/" class="facebook">
+                <i class="fa-brands fa-facebook-f"></i></a>
+
+              <a href="https://twitter.com/W3layouts" class="twitter">
+                <i class="fa-brands fa-twitter"></i></a>
+
+              <a href="https://instagram.com/company/w3layouts" class="instagram">
+                <i class="fa-brands fa-instagram"></i></a>
+
+              <a href="https://in.linkedin.com/company/w3layouts" class="linkedin">
+                <i class="fa-brands fa-linkedin-in"></i></a>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-            <div class="box-wrap">
-              <div>
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <h4>
-                <a href="#url" class="title-head mb-3"> Project Reporting</a>
-              </h4>
-              <p>
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit, dolor eget ex fermentum.
-              </p>
+          <div class="col-lg-4 col-md-6 pe-lg-4 mt-md-0 mt-5 footer-list">
+            <h6 class="footer-title">Contact Info</h6>
+            <p class="mb-2"> Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY -
+              62617.
+            </p>
+
+            <p class="mb-2">Phone Number :
+              <a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+            </p>
+
+            <p class="mb-2">Email :
+              <a href="mailto:info@example.com">info@example.com</a>
+            </p>
+
+            <p class="mb-2">Support :
+              <a href="mailto:info@support.com">info@support.com</a>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list footer-2 mt-lg-0 mt-5">
+            <div id="categories-4" class="widget_categories">
+              <h6 class="footer-title">Categories</h6>
+              <ul>
+                <li class="cat-item cat-item-2">
+                  <a href="#">Marketing Strategy</a>
+                </li>
+                <li class="cat-item cat-item-3">
+                  <a href="#">Startup Business</a>
+                </li>
+                <li class="cat-item cat-item-4">
+                  <a href="#">Web development</a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
-            <div class="box-wrap">
-              <div>
-                <img
-                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon3.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <h4>
-                <a href="#url" class="title-head mb-3"> Security Enhanced</a>
-              </h4>
-              <p>
-                Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
-                elit, dolor eget ex fermentum.
-              </p>
+
+          <div class="col-lg-2 col-md-6 col-sm-5 col-6 footer-list footer-2 mt-lg-0 mt-5">
+            <div id="meta-4" class="widget_meta">
+              <h6 class="footer-title">Meta</h6>
+              <ul>
+                <li><a href="https://wp.w3layouts.com/corpvision/wp-login.php">Log in</a></li>
+                <li><a href="https://wp.w3layouts.com/corpvision/feed/">Entries feed</a></li>
+                <li><a href="https://wp.w3layouts.com/corpvision/comments/feed/">Comments feed</a>
+                </li>
+                <li><a href="https://wordpress.org/">WordPress.org</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </body>
+    <!-- Copyright -->
+    <section class="copyright text-center">
+      <div class="container">
+        <p class="copy-footer">© 2024 Corp Vision All Rights Reserved | WordPress Theme by
+          <a href="https://w3layouts.com/"> W3Layouts. </a>
+        </p>
+      </div>
+
+      <!-- Move to top -->
+      <button onclick="topFunction()" id="movetop" title="Go to top" style="display: block;">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </section>
+  </footer>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+
+  <!-- Header JS -->
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= 80) {
+          $("#site-header").addClass("nav-fixed");
+          $(".nav-link").css({
+            "color": "#3f3a64",
+            "opacity": "0.7"
+          });
+          $(".nav-item.active .nav-link").css({
+            "color": "#009f4d",
+            "opacity": "0.9"
+          });
+          $(".mode-container").addClass("mode-container-scrolled");
+          $(".dropdown-toggle").addClass("dropdown-toggle-scrolled");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+          $(".nav-link").css({
+            "color": "",
+            "opacity": ""
+          });
+          $(".nav-item.active .nav-link").css({
+            "color": "",
+            "opacity": ""
+          });
+          $(".mode-container").removeClass("mode-container-scrolled");
+          $(".dropdown-toggle").removeClass("dropdown-toggle-scrolled");
+        }
+      });
+    });
+  </script>
+
+  <!-- Search JS -->
+  <script>
+    $('.control').click(function () {
+      $('body').addClass('search-active');
+      $('.input-search').focus();
+    });
+
+    $('.icon-close').click(function () {
+      $('body').removeClass('search-active');
+    });
+  </script>
+  <script>
+    // gắn chức năng click cho switchButton
+    document.getElementById("switchButton").onclick = function () {
+      document.getElementById("myBody").classList.toggle("dark");
+    };
+  </script>
+
+  <!-- Move To Top JS -->
+  <script>
+    // Khi người dùng cuộn xuống 20px từ đầu trang, hiển thị nút
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("movetop").style.display = "block";
+      } else {
+        document.getElementById("movetop").style.display = "none";
+      }
+    }
+
+    // Khi người dùng nhấn vào nút, cuộn lên đầu trang
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
 </html>
