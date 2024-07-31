@@ -128,25 +128,10 @@ div {
     font-size: 16px;
 }
 
-/* .fa {
-    display: inline-block;
-    font: normal normal normal 14px / 1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
 .demo-bar .icon .fa {
     position: static;
     color: #e6ebff;
 }
-
-
-
-
-
-
 
 /* Header CSS */
 .main-header {
@@ -270,8 +255,6 @@ div {
     color: #3f3a64;
 }
 
-/* .navbar-dark .navbar-nav .show>.nav-link,
-.navbar-dark .navbar-nav .active>.nav-link, */
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
     color: #ffffff;
