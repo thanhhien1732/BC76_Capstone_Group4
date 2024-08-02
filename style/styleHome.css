@@ -565,19 +565,19 @@ button.navbar-toggler .icon-expand {
 }
 
 .bg1 {
-    background: url(../image/home/b1.jpg);
+    background: url(../image/b1.jpg);
 }
 
 .bg2 {
-    background: url(../image/home/b2.jpg);
+    background: url(../image/b2.jpg);
 }
 
 .bg3 {
-    background: url(../image/home/b3.jpg);
+    background: url(../image/b3.jpg);
 }
 
 .bg4 {
-    background: url(../image/home/b4.jpg);
+    background: url(../image/b4.jpg);
 }
 
 .bg-custom {
@@ -1283,7 +1283,7 @@ ul.blog-meta li {
 
 /* Project CSS */
 .project {
-    background-image: url(../image/home/map.png);
+    background-image: url(../image/map.png);
     background-color: #151421;
     background-size: contain;
     background-repeat: no-repeat;
