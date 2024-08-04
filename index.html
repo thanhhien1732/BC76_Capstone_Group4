@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="./style/styleHome.css">
 </head>
 
-<body id="myBody" class="search-active">
+<body id="myBody">
     <!-- Right Sidebar -->
     <div class="pull-right toggle-right-sidebar">
         <i class="fa-solid fa-angles-right"></i>
@@ -132,6 +132,7 @@
                             <a class="nav-link" href="./pages/contact-page.html">Contact</a>
                         </li>
                     </ul>
+
                     <!-- Search -->
                     <div class="header-search HeaderSearch">
                         <div class="control mr-3">
@@ -141,10 +142,11 @@
                         </div>
                         <!-- full screen form controls -->
                         <i class="fa-solid fa-xmark icon-close"></i>
-                        <form action="./index.html" method="GET" class="search-input">
+                        <form action="index.html" method="GET" class="search-input">
                             <input class="input-search" name="s" placeholder="Start Typing" type="text">
                         </form>
                     </div>
+
                     <!-- Dark And Light Mode -->
                     <div class="mobile-position text-center DarkandLight">
                         <nav class="navigation">
@@ -617,8 +619,8 @@
                                                     adipisicing elit. Esse architecto est ea sunt eligendi cum?</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team1.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team1.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -641,8 +643,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team2.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team2.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -665,8 +667,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team3.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team3.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -689,8 +691,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team4.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team4.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -998,15 +1000,19 @@
 
     <!-- Search JS -->
     <script>
-        $('.control').click(function () {
-            $('body').addClass('search-active');
-            $('.input-search').focus();
-        });
+        $(document).ready(function () {
+            $('.control').click(function () {
+                $('body').addClass('search-active');
+                $('.input-search').focus();
+            });
 
-        $('.icon-close').click(function () {
-            $('body').removeClass('search-active');
+            $('.icon-close').click(function () {
+                $('body').removeClass('search-active');
+            });
         });
     </script>
+
+
     <script>
         // gắn chức năng click cho switchButton
         document.getElementById("switchButton").onclick = function () {
