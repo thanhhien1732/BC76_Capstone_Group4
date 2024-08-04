@@ -851,15 +851,21 @@
   <!-- Search JS -->
   <script>
     $(document).ready(function () {
-      $('.control').click(function () {
-        $('body').addClass('search-active');
-        $('.input-search').focus();
-      });
+        $('#right-sidebar').addClass('open');
+        $('.left-icon').show();
+        $('.right-icon').hide();
 
-      $('.icon-close').click(function () {
-        $('body').removeClass('search-active');
+        $('.toggle-right-sidebar').click(function () {
+          $('#right-sidebar').toggleClass('open');
+          if ($('#right-sidebar').hasClass('open')) {
+            $('.right-icon').hide();
+            $('.left-icon').show();
+          } else {
+            $('.right-icon').show();
+            $('.left-icon').hide();
+          }
+        });
       });
-    });
   </script>
 
   <script>

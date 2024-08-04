@@ -596,6 +596,10 @@
   <!-- Right Sidebar JS -->
   <script>
     $(document).ready(function () {
+      $('#right-sidebar').addClass('open');
+      $('.left-icon').show();
+      $('.right-icon').hide();
+
       $('.toggle-right-sidebar').click(function () {
         $('#right-sidebar').toggleClass('open');
         if ($('#right-sidebar').hasClass('open')) {
