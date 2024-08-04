@@ -54,27 +54,26 @@ div {
 .pull-right {
     float: right;
     position: fixed;
-    right: 0px;
+    right: -20px;
     top: 150px;
     width: 90px;
     z-index: 99999;
     text-align: center;
 }
 
-.fa-angles-right {
+.open-sidebar {
     background: #0D1326;
-    width: 20px;
+    width: 50px;
     height: 50px;
     line-height: 50px;
-    text-align: center;
     color: #e6ebff;
     border-radius: 50px;
-    font-size: 26px;
+    font-size: 18px;
     cursor: pointer;
     opacity: .5;
 }
 
-.fa-angles-right:hover {
+.open-sidebar:hover {
     opacity: 1;
 }
 
@@ -82,17 +81,18 @@ div {
     width: 90px;
     position: fixed;
     z-index: 1000;
-    right: 0px;
+    right: -300px;
     top: 0;
     margin-top: 140px;
-    -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     overflow-y: auto;
 }
 
-.demo-bar {
+#right-sidebar.open {
+    right: 0;
+}
+
+.sidebar {
     top: 0;
     right: 0;
     bottom: 0;
@@ -104,16 +104,16 @@ div {
     border-bottom-left-radius: 9px;
 }
 
-.demo-bar .demo-btns {
+.sidebar .sidebar-btns {
     border-top: 1px solid #41414d;
     padding-top: 30px;
 }
 
-.demo-bar .demo-btns a:hover {
+.sidebar .sidebar-btns a:hover {
     opacity: 1;
 }
 
-.demo-bar a {
+.sidebar a {
     display: block;
     color: #e6ebff;
     text-decoration: none;
@@ -123,14 +123,9 @@ div {
     text-align: center;
 }
 
-.demo-bar .icon {
+.sidebar .icon {
     display: block;
     font-size: 16px;
-}
-
-.demo-bar .icon .fa {
-    position: static;
-    color: #e6ebff;
 }
 
 /* Header CSS */
@@ -343,8 +338,16 @@ body.search-active .search-input {
     width: 100%;
 }
 
+.input-search {
+    color: #fff;
+}
+
 .input-search::placeholder {
     color: #fff;
+}
+
+body.search-active {
+    overflow: hidden;
 }
 
 /* Dark And Light Mode CSS */
