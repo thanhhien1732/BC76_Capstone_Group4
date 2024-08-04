@@ -636,15 +636,18 @@
 
   <!-- Search JS -->
   <script>
-    $('.control').click(function () {
-      $('body').addClass('search-active');
-      $('.input-search').focus();
-    });
+    $(document).ready(function () {
+      $('.control').click(function () {
+        $('body').addClass('search-active');
+        $('.input-search').focus();
+      });
 
-    $('.icon-close').click(function () {
-      $('body').removeClass('search-active');
+      $('.icon-close').click(function () {
+        $('body').removeClass('search-active');
+      });
     });
   </script>
+
   <script>
     // gắn chức năng click cho switchButton
     document.getElementById("switchButton").onclick = function () {
