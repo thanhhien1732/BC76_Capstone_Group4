@@ -1,12 +1,22 @@
+h4 {
+  color: #3f3a64;
+}
+
+p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #666;
+  opacity: .8;
+}
+
 .embed-image {
-  background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg);
+  background: url(../image/b1.jpg);
   background-size: cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   position: relative;
   z-index: 0;
-  height: 300px;
+  height: 385px;
   display: flex;
-  /* padding-top: 50px; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -17,7 +27,7 @@
   font-size: 50px;
   font-weight: 600;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 .embed-image p {
@@ -63,13 +73,10 @@
   max-width: 100%;
   height: auto;
 }
+
 .bg-shape {
   border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
   box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
-  -ms-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
-  -o-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
   width: 500px;
   height: 500px;
   background: #009f4d;
@@ -78,6 +85,7 @@
   top: 0;
   z-index: -1;
 }
+
 .imginfo__box {
   background-color: #009f4d;
   color: #fff;
@@ -92,9 +100,11 @@
   transform: rotate(45deg);
   text-align: center;
 }
+
 .imginfo__info {
   transform: rotate(-45deg);
 }
+
 .imginfo__box .imginfo__title {
   font-size: 40px;
   line-height: 40px;
@@ -103,6 +113,7 @@
   margin: 0;
   padding: 0 0 10px 0;
 }
+
 .imginfo__box p {
   color: #fff;
   font-size: 24px;
@@ -121,6 +132,7 @@
   -o-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 15px 38px 0 rgba(0, 0, 0, 0.2);
 }
+
 .radius-image-full {
   border-radius: 35px;
 }
@@ -140,28 +152,30 @@
 }
 
 .intro-text {
-  font-weight: bold;
-  font-size: 23px;
+  display: block;
+  color: #3f3a64;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
 }
 
 .number {
-  font-weight: bold;
-  font-size: 20px;
-  color: #00a63f;
+  color: #009f4d;
+  font-size: 35px;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .text-second-intro {
-  font-weight: bold;
-}
-
-.our-company {
-  font-size: 14px;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 28px;
+  color: #3f3a64;
+  display: inline-block;
   font-weight: 600;
-  text-transform: uppercase;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: #7e7d7d;
-  display: block;
+  transition: 0.3s ease-in;
 }
 
 .bg-atta {
@@ -199,6 +213,7 @@
   align-items: center;
   z-index: 9999;
 }
+
 .popup-video iframe {
   width: 80%;
   height: 80%;
@@ -260,6 +275,7 @@
   transition: all 0.2s ease-in-out;
   font-weight: bold;
 }
+
 .team-details p {
   color: #fff;
 }
@@ -276,13 +292,8 @@
 
 .team-member a {
   text-decoration: none;
-  color: black;
+  color: #3f3a64;
   transition: 0.2s ease-in-out;
-}
-
-.team-member p {
-  color: #abb8c3;
-  font-weight: 600;
 }
 
 h6 {
@@ -309,4 +320,12 @@ h6 {
 .title-content {
   max-width: 800px;
   margin: auto;
+}
+
+.content4-right-info h6 {
+  text-align: left;
+  margin-bottom: 0;
+  color: #3f3a64;
+  font-weight: 600;
+  font-size: 24px;
 }
