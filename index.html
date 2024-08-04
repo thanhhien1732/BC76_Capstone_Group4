@@ -51,39 +51,38 @@
     <link rel="stylesheet" href="./style/styleHome.css">
 </head>
 
-<body id="myBody" class="search-active">
-    <!-- Right Sidebar -->
+<body id="myBody">
+    <!-- Right Sidebar Toggle Button -->
     <div class="pull-right toggle-right-sidebar">
-        <i class="fa-solid fa-angles-right"></i>
+        <div class="open-sidebar right-icon">
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <div class="open-sidebar left-icon" style="display: none;">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
     </div>
-    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
-        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
-
-            <div id="DemoBar" class="demo-bar">
-                <div class="demo-btns">
-                    <a href="https://w3layouts.com/?p=4763800000032896">
-                        <span class="icon icon-back">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </span>
-                        <span class="icon icon-text">Back</span>
-                    </a>
-                    <a href="https://w3layouts.com/?p=4763800000032896">
-                        <span class="icon icon-download">
-                            <i class="fa-solid fa-download"></i>
-                        </span>
-                        <span class="icon icon-text">Download</span>
-                    </a>
-                    <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896"
-                        class="no-margin-bottom-mobile">
-                        <span class="icon icon-buy">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </span>
-                        <span class="icon icon-text">Buy</span>
-                    </a>
-                </div>
-            </div>
-            <div class="right-sidebar-panel-content animate__animated animate__fadeInRight" tabindex="5003"
-                style="overflow: hidden; outline: none;">
+    <!-- Right Sidebar -->
+    <div id="right-sidebar">
+        <div class="sidebar">
+            <div class="sidebar-btns">
+                <a href="https://w3layouts.com/?p=4763800000032896">
+                    <span class="icon icon-back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                    <span class="icon icon-text">Back</span>
+                </a>
+                <a href="https://w3layouts.com/?p=4763800000032896">
+                    <span class="icon icon-download">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                    <span class="icon icon-text">Download</span>
+                </a>
+                <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896" class="no-margin-bottom-mobile">
+                    <span class="icon icon-buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="icon icon-text">Buy</span>
+                </a>
             </div>
         </div>
     </div>
@@ -132,6 +131,7 @@
                             <a class="nav-link" href="./pages/contact-page.html">Contact</a>
                         </li>
                     </ul>
+
                     <!-- Search -->
                     <div class="header-search HeaderSearch">
                         <div class="control mr-3">
@@ -141,10 +141,11 @@
                         </div>
                         <!-- full screen form controls -->
                         <i class="fa-solid fa-xmark icon-close"></i>
-                        <form action="./index.html" method="GET" class="search-input">
+                        <form action="index.html" method="GET" class="search-input">
                             <input class="input-search" name="s" placeholder="Start Typing" type="text">
                         </form>
                     </div>
+
                     <!-- Dark And Light Mode -->
                     <div class="mobile-position text-center DarkandLight">
                         <nav class="navigation">
@@ -617,8 +618,8 @@
                                                     adipisicing elit. Esse architecto est ea sunt eligendi cum?</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team1.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team1.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -641,8 +642,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team2.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team2.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -665,8 +666,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team3.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team3.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -689,8 +690,8 @@
                                                     Dolores molestias adipisci dolo amet!.</q>
                                             </blockquote>
                                             <div class="testi-des">
-                                                <div class="test-img"><img src="./image/team4.jpg"
-                                                        class="img-fluid" alt="client-img">
+                                                <div class="test-img"><img src="./image/team4.jpg" class="img-fluid"
+                                                        alt="client-img">
                                                 </div>
                                                 <div class="peopl align-self-center">
                                                     <h3>John wilson</h3>
@@ -954,12 +955,23 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- disable body scroll which navbar is in active -->
+    <!-- Right Sidebar JS -->
     <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
+        $(document).ready(function () {
+            $('#right-sidebar').addClass('open');
+            $('.left-icon').show();
+            $('.right-icon').hide();
+
+            $('.toggle-right-sidebar').click(function () {
+                $('#right-sidebar').toggleClass('open');
+                if ($('#right-sidebar').hasClass('open')) {
+                    $('.right-icon').hide();
+                    $('.left-icon').show();
+                } else {
+                    $('.right-icon').show();
+                    $('.left-icon').hide();
+                }
+            });
         });
     </script>
 
@@ -998,15 +1010,18 @@
 
     <!-- Search JS -->
     <script>
-        $('.control').click(function () {
-            $('body').addClass('search-active');
-            $('.input-search').focus();
-        });
+        $(document).ready(function () {
+            $('.control').click(function () {
+                $('body').addClass('search-active');
+                $('.input-search').focus();
+            });
 
-        $('.icon-close').click(function () {
-            $('body').removeClass('search-active');
+            $('.icon-close').click(function () {
+                $('body').removeClass('search-active');
+            });
         });
     </script>
+
     <script>
         // gắn chức năng click cho switchButton
         document.getElementById("switchButton").onclick = function () {

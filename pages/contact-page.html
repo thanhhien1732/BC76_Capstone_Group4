@@ -33,42 +33,42 @@
     <link rel="stylesheet" href="../style/styleContact.css">
 </head>
 
-<body id="myBody" class="search-active">
-    <!-- Right Sidebar -->
+<body id="myBody">
+    <!-- Right Sidebar Toggle Button -->
     <div class="pull-right toggle-right-sidebar">
-        <i class="fa-solid fa-angles-right"></i>
+        <div class="open-sidebar right-icon">
+            <i class="fa-solid fa-angles-right"></i>
+        </div>
+        <div class="open-sidebar left-icon" style="display: none;">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
     </div>
-    <div id="right-sidebar" class="right-sidebar-notifcations nav-collapse">
-        <div class="bs-example bs-example-tabs right-sidebar-tab-notification" data-example-id="togglable-tabs">
-
-            <div id="DemoBar" class="demo-bar">
-                <div class="demo-btns">
-                    <a href="https://w3layouts.com/?p=4763800000032896">
-                        <span class="icon icon-back">
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </span>
-                        <span class="icon icon-text">Back</span>
-                    </a>
-                    <a href="https://w3layouts.com/?p=4763800000032896">
-                        <span class="icon icon-download">
-                            <i class="fa-solid fa-download"></i>
-                        </span>
-                        <span class="icon icon-text">Download</span>
-                    </a>
-                    <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896"
-                        class="no-margin-bottom-mobile">
-                        <span class="icon icon-buy">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </span>
-                        <span class="icon icon-text">Buy</span>
-                    </a>
-                </div>
-            </div>
-            <div class="right-sidebar-panel-content animate__animated animate__fadeInRight" tabindex="5003"
-                style="overflow: hidden; outline: none;">
+    <!-- Right Sidebar -->
+    <div id="right-sidebar">
+        <div class="sidebar">
+            <div class="sidebar-btns">
+                <a href="https://w3layouts.com/?p=4763800000032896">
+                    <span class="icon icon-back">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+                    <span class="icon icon-text">Back</span>
+                </a>
+                <a href="https://w3layouts.com/?p=4763800000032896">
+                    <span class="icon icon-download">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+                    <span class="icon icon-text">Download</span>
+                </a>
+                <a href="https://w3layouts.com/checkout/?add-to-cart=4763800000032896" class="no-margin-bottom-mobile">
+                    <span class="icon icon-buy">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    <span class="icon icon-text">Buy</span>
+                </a>
             </div>
         </div>
     </div>
+
 
     <!-- Header -->
     <header id="site-header" class="fixed-top main-header">
@@ -366,12 +366,23 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- disable body scroll which navbar is in active -->
+    <!-- Right Sidebar JS -->
     <script>
-        $(function () {
-            $('.navbar-toggler').click(function () {
-                $('body').toggleClass('noscroll');
-            })
+        $(document).ready(function () {
+            $('#right-sidebar').addClass('open');
+            $('.left-icon').show();
+            $('.right-icon').hide();
+
+            $('.toggle-right-sidebar').click(function () {
+                $('#right-sidebar').toggleClass('open');
+                if ($('#right-sidebar').hasClass('open')) {
+                    $('.right-icon').hide();
+                    $('.left-icon').show();
+                } else {
+                    $('.right-icon').show();
+                    $('.left-icon').hide();
+                }
+            });
         });
     </script>
 
@@ -410,15 +421,18 @@
 
     <!-- Search JS -->
     <script>
-        $('.control').click(function () {
-            $('body').addClass('search-active');
-            $('.input-search').focus();
-        });
+        $(document).ready(function () {
+            $('.control').click(function () {
+                $('body').addClass('search-active');
+                $('.input-search').focus();
+            });
 
-        $('.icon-close').click(function () {
-            $('body').removeClass('search-active');
+            $('.icon-close').click(function () {
+                $('body').removeClass('search-active');
+            });
         });
     </script>
+
     <script>
         // gắn chức năng click cho switchButton
         document.getElementById("switchButton").onclick = function () {
