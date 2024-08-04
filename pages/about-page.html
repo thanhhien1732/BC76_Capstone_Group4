@@ -35,7 +35,7 @@
     <div class="open-sidebar right-icon">
       <i class="fa-solid fa-angles-right"></i>
     </div>
-    <div class="open-sidebar left-icon" style="display: none;">
+    <div class="open-sidebar left-icon">
       <i class="fa-solid fa-angles-left"></i>
     </div>
   </div>
@@ -812,17 +812,17 @@
   <script>
     $(document).ready(function () {
       $('#right-sidebar').addClass('open');
-      $('.left-icon').show();
-      $('.right-icon').hide();
+      $('.right-icon').show();
+      $('.left-icon').hide();
 
       $('.toggle-right-sidebar').click(function () {
         $('#right-sidebar').toggleClass('open');
         if ($('#right-sidebar').hasClass('open')) {
-          $('.right-icon').hide();
-          $('.left-icon').show();
-        } else {
-          $('.right-icon').show();
           $('.left-icon').hide();
+          $('.right-icon').show();
+        } else {
+          $('.left-icon').show();
+          $('.right-icon').hide();
         }
       });
     });
