@@ -291,7 +291,7 @@ body.search-active .control .icon-search {
     opacity: 0;
 }
 
-.header-search .icon-close {
+.header-search .fa-xmark {
     position: absolute;
     color: white;
     cursor: pointer;
@@ -300,7 +300,7 @@ body.search-active .control .icon-search {
     transition: all 0.3s ease-in-out;
 }
 
-body.search-active .icon-close {
+body.search-active .fa-xmark {
     opacity: 1;
     transform: rotate(-90deg);
 }
@@ -570,7 +570,7 @@ body.search-active {
 }
 
 @media only screen and (max-width: 991px) {
-    .header-search .icon-close {
+    .header-search .fa-xmark {
         right: -50px;
         z-index: 1;
     }
