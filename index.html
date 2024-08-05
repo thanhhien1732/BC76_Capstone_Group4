@@ -981,11 +981,11 @@
                     $("#site-header").addClass("nav-fixed");
                     $(".nav-link").css({
                         "color": "#3f3a64",
-                        "opacity": "0.7"
+                        "opacity": "0.7",
                     });
                     $(".nav-item.active .nav-link").css({
                         "color": "#009f4d",
-                        "opacity": "0.9"
+                        "opacity": "0.9",
                     });
                     $(".mode-container").addClass("mode-container-scrolled");
                     $(".dropdown-toggle").addClass("dropdown-toggle-scrolled");
@@ -1034,27 +1034,60 @@
             var $iconExpand = $('.icon-expand');
             var $iconClose = $('.icon-close');
             var $mainHeader = $('.main-header');
+            var $navbarCollapse = $('#navbarScroll');
 
-            function checkTogglerState() {
-                if ($navbarToggler.hasClass('collapsed')) {
+            function updateHeaderState() {
+                var isCollapsed = $navbarToggler.hasClass('collapsed');
+                var isScrolled = $(window).scrollTop() > 0;
+                var isNavbarShown = $navbarCollapse.hasClass('show');
+
+                if (isCollapsed) {
                     $iconClose.show();
                     $iconExpand.hide();
+                    $('body').addClass('no-scroll');
                     $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
                 } else {
                     $iconClose.hide();
                     $iconExpand.show();
+                    $('body').removeClass('no-scroll');
+                    if (!isScrolled) {
+                        $mainHeader.css('background', '');
+                    }
+                }
+
+                if (isScrolled) {
+                    $mainHeader.addClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', '');
+                    }
+                } else {
+                    $mainHeader.removeClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+                    }
+                }
+
+                if (isScrolled) {
+                    $mainHeader.addClass('nav-fixed');
                     $mainHeader.css('background', '');
+                } else {
+                    $mainHeader.removeClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+                    }
                 }
             }
 
             $navbarToggler.on('click', function () {
                 $navbarToggler.toggleClass('collapsed');
-                checkTogglerState();
+                updateHeaderState();
             });
 
-            $(window).on('resize', checkTogglerState);
+            $(window).on('resize scroll', function () {
+                updateHeaderState();
+            });
 
-            checkTogglerState();
+            updateHeaderState();
         });
     </script>
 

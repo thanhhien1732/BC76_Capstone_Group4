@@ -68,79 +68,79 @@
       </div>
     </div>
   </div>
-  
-<!-- Header -->
-<header id="site-header" class="fixed-top main-header">
-  <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <h1>
-        <a class="navbar-brand" href="../index.html">
-          <i class="fa-solid fa-align-right text-success"></i>
-          Corp Vision
-          <span class="logo">Vision to your Future</span>
-        </a>
-      </h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav mx-lg-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link active" href="about-page.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services-page.html">Services</a>
-          </li>
-          <li class="nav-item dropdown menu-item">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
-              aria-expanded="false">Pages</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-              <li><a class="dropdown-item" href="#">404 Page</a></li>
-              <li><a class="dropdown-item" href="#">Landing Page</a></li>
-              <li><a class="dropdown-item" href="#">Elements Page</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact-page.html">Contact</a>
-          </li>
-        </ul>
-        <!-- Search -->
-        <div class="header-search">
-          <div class="control mr-3">
-            <div class="btn-material">
-              <i class="fa-solid fa-magnifying-glass icon-search"></i>
+
+  <!-- Header -->
+  <header id="site-header" class="fixed-top main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <h1>
+          <a class="navbar-brand" href="../index.html">
+            <i class="fa-solid fa-align-right text-success"></i>
+            Corp Vision
+            <span class="logo">Vision to your Future</span>
+          </a>
+        </h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+          <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mx-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="about-page.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services-page.html">Services</a>
+            </li>
+            <li class="nav-item dropdown menu-item">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                <li><a class="dropdown-item" href="#">Elements Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-page.html">Contact</a>
+            </li>
+          </ul>
+          <!-- Search -->
+          <div class="header-search">
+            <div class="control mr-3">
+              <div class="btn-material">
+                <i class="fa-solid fa-magnifying-glass icon-search"></i>
+              </div>
             </div>
+            <!-- full screen form controls -->
+            <i class="fa-solid fa-xmark"></i>
+            <form action="../index.html" method="GET" class="search-input">
+              <input class="input-search" name="s" placeholder="Start Typing" type="text">
+            </form>
           </div>
-          <!-- full screen form controls -->
-          <i class="fa-solid fa-xmark"></i>
-          <form action="../index.html" method="GET" class="search-input">
-            <input class="input-search" name="s" placeholder="Start Typing" type="text">
-          </form>
+          <!-- Dark And Light Mode -->
+          <div class="mobile-position text-center DarkandLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <div class="mode-container" id="switchButton" title="Click to switch theme">
+                    <i class="gg-sun"></i>
+                    <i class="gg-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
         </div>
-        <!-- Dark And Light Mode -->
-        <div class="mobile-position text-center DarkandLight">
-          <nav class="navigation">
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox">
-                <div class="mode-container" id="switchButton" title="Click to switch theme">
-                  <i class="gg-sun"></i>
-                  <i class="gg-moon"></i>
-                </div>
-              </label>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </nav>
-  </div>
-</header>
+      </nav>
+    </div>
+  </header>
 
   <!-- About Us -->
   <div class="embed-image">
@@ -928,27 +928,60 @@
       var $iconExpand = $('.icon-expand');
       var $iconClose = $('.icon-close');
       var $mainHeader = $('.main-header');
+      var $navbarCollapse = $('#navbarScroll');
 
-      function checkTogglerState() {
-        if ($navbarToggler.hasClass('collapsed')) {
+      function updateHeaderState() {
+        var isCollapsed = $navbarToggler.hasClass('collapsed');
+        var isScrolled = $(window).scrollTop() > 0;
+        var isNavbarShown = $navbarCollapse.hasClass('show');
+
+        if (isCollapsed) {
           $iconClose.show();
           $iconExpand.hide();
+          $('body').addClass('no-scroll');
           $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
         } else {
           $iconClose.hide();
           $iconExpand.show();
+          $('body').removeClass('no-scroll');
+          if (!isScrolled) {
+            $mainHeader.css('background', '');
+          }
+        }
+
+        if (isScrolled) {
+          $mainHeader.addClass('nav-fixed');
+          if (isNavbarShown) {
+            $mainHeader.css('background', '');
+          }
+        } else {
+          $mainHeader.removeClass('nav-fixed');
+          if (isNavbarShown) {
+            $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+          }
+        }
+
+        if (isScrolled) {
+          $mainHeader.addClass('nav-fixed');
           $mainHeader.css('background', '');
+        } else {
+          $mainHeader.removeClass('nav-fixed');
+          if (isNavbarShown) {
+            $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+          }
         }
       }
 
       $navbarToggler.on('click', function () {
         $navbarToggler.toggleClass('collapsed');
-        checkTogglerState();
+        updateHeaderState();
       });
 
-      $(window).on('resize', checkTogglerState);
+      $(window).on('resize scroll', function () {
+        updateHeaderState();
+      });
 
-      checkTogglerState();
+      updateHeaderState();
     });
   </script>
 

@@ -50,6 +50,10 @@ div {
     unicode-bidi: isolate;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 /* Right Sidebar */
 .pull-right {
     float: right;
@@ -482,6 +486,43 @@ body.search-active {
     border-radius: 0.25rem;
 }
 
+@media (max-width: 991px) {
+    .carousel-wrap .carousel-inner {
+        height: 700px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-wrap .carousel-inner {
+        height: 650px !important;
+    }
+}
+
+@media (max-width: 1280px) {
+    .carousel-content h1 {
+        font-size: 55px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-content h1 {
+        font-size: 50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-content h1 {
+        font-size: 45px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-content p {
+        font-size: 18px !important;
+        line-height: 28px !important;
+    }
+}
+
 @media only screen and (max-width: 991px) {
     header.main-header {
         height: auto;
@@ -550,6 +591,18 @@ body.search-active {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        text-align: center;
+    }
+}
+
 /* Search Reponsive */
 @media only screen and (max-width: 991px) {
     .header-search {
@@ -592,6 +645,8 @@ body.search-active {
         top: 26px;
     }
 }
+
+
 
 /* Carousel CSS */
 .carousel-wrap {
