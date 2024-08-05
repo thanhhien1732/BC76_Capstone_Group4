@@ -28,7 +28,7 @@
   <link rel="stylesheet" href=".././style/styleService.css" />
 </head>
 
-<body>
+<body id="myBody">
   <!-- Right Sidebar Toggle Button -->
   <div class="pull-right toggle-right-sidebar">
     <div class="open-sidebar right-icon">
@@ -74,8 +74,8 @@
             <span class="logo">Vision to your Future</span>
           </a>
         </h1>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-content"
-          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
           <span class="navbar-toggler-icon fa icon-close fa-times"></span>
         </button>
@@ -662,6 +662,37 @@
     document.getElementById("switchButton").onclick = function () {
       document.getElementById("myBody").classList.toggle("dark");
     };
+  </script>
+
+  <!-- Reponsive button -->
+  <script>
+    $(document).ready(function () {
+      var $navbarToggler = $('.navbar-toggler');
+      var $iconExpand = $('.icon-expand');
+      var $iconClose = $('.icon-close');
+      var $mainHeader = $('.main-header');
+
+      function checkTogglerState() {
+        if ($navbarToggler.hasClass('collapsed')) {
+          $iconClose.show();
+          $iconExpand.hide();
+          $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+        } else {
+          $iconClose.hide();
+          $iconExpand.show();
+          $mainHeader.css('background', '');
+        }
+      }
+
+      $navbarToggler.on('click', function () {
+        $navbarToggler.toggleClass('collapsed');
+        checkTogglerState();
+      });
+
+      $(window).on('resize', checkTogglerState);
+
+      checkTogglerState();
+    });
   </script>
 
   <!-- Move To Top JS -->
