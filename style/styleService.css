@@ -1,5 +1,5 @@
 .embed-image {
-  background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg);
+  background: url(../image/b1.jpg);
   background-size: cover;
   background-repeat: no-repeat, no-repeat, no-repeat;
   position: relative;
@@ -25,16 +25,18 @@
   opacity: 0.7;
 }
 
-#checkout {
-  color: #7e7d7d;
-  font-family: "Jost", sans-serif;
+h3.title-service {
   font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  color: #3f3a64;
 }
 
-.our-services h3 {
-  font-size: 35px;
-  line-height: 45px;
-  font-weight: 500;
+p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #666;
+  opacity: .8;
 }
 
 .hero-overlay {
@@ -69,8 +71,13 @@
 }
 
 .intro-text {
-  font-weight: bold;
-  font-size: 23px;
+  display: block;
+  color: #3f3a64;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-size: 22px;
+  letter-spacing: 0;
 }
 
 .title-head {
@@ -110,11 +117,11 @@
   margin-top: 25px;
   display: block;
   text-decoration: none;
-  color: black;
+  color: #3f3a64;
 }
 
 .quote-info {
-  background: url(https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/bg1.jpg);
+  background: url(../image/bg1.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
@@ -123,6 +130,12 @@
   -moz-background-size: cover;
   z-index: 0;
   position: relative;
+}
+
+.appyl-sub-icon-info p {
+  color: #eee;
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 .quote-sec-info {
@@ -134,10 +147,15 @@
   align-items: center;
 }
 
+.quote-sec-info:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .quote-form {
   background: white;
   border-radius: 8px;
-  padding: 60px;
+  padding: 65px;
 }
 
 form {
@@ -145,8 +163,28 @@ form {
   margin-top: 0em;
   unicode-bidi: isolate;
 }
+
 .form-group {
   margin-bottom: 1rem;
+}
+
+.quote-form input,
+.quote-form textarea {
+  margin-bottom: 20px;
+  background: #f7f7f7;
+  text-transform: capitalize;
+  height: 60px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 17px;
+  color: #666;
+  padding: 12px 25px;
+  box-shadow: none;
+}
+
+.quote-form textarea {
+  min-height: 100px;
 }
 
 .appyl-sub-icon-info {
