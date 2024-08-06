@@ -94,7 +94,7 @@
               <a class="nav-link active" href="about-page.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services-page.html">Services</a>
+              <a class="nav-link" href="./services-page.html">Services</a>
             </li>
             <li class="nav-item dropdown menu-item">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
@@ -107,7 +107,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact-page.html">Contact</a>
+              <a class="nav-link" href="./contact-page.html">Contact</a>
             </li>
           </ul>
           <!-- Search -->
@@ -156,8 +156,7 @@
     <div class="row">
       <div class="col-lg-6 left-wthree-img">
         <div class="position-relative">
-          <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/about2.jpg" alt=""
-            class="img-fluid radius-image-full" />
+          <img src="../image/about2.jpg" alt="" class="img-fluid radius-image-full" />
           <div class="bg-shape"></div>
           <div class="imginfo__box">
             <div class="imginfo__info">
@@ -202,30 +201,6 @@
                   allow="autoplay; fullscreen" allowfullscreen></iframe>
               </div>
             </div>
-
-            <script>
-              const modal = document.getElementById("myModal");
-              const btn = document.querySelector(".video-play-icon");
-              const span = document.getElementsByClassName("close")[0];
-              const iframe = document.getElementById("youtube-video");
-
-              btn.onclick = function () {
-                iframe.src += "&autoplay=1";
-                modal.style.display = "block";
-              }
-
-              span.onclick = function () {
-                modal.style.display = "none";
-                iframe.src = iframe.src.replace("&autoplay=1", "");
-              }
-
-              window.onclick = function (event) {
-                if (event.target == modal) {
-                  modal.style.display = "none";
-                  iframe.src = iframe.src.replace("&autoplay=1", "");
-                }
-              }
-            </script>
           </div>
         </div>
       </div>
@@ -342,10 +317,8 @@
                 justify-content: center;
                 align-items: center;
               ">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/ab.jpg"
-              alt="hingg ha" height="400px" style="border-radius: 8px" />
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/ab2.jpg"
-              alt="hingg as" height="400px" style="border-radius: 8px" />
+            <img src="../image/ab.jpg" alt="hingg ha" height="400px" style="border-radius: 8px" />
+            <img src="../image/ab2.jpg" alt="hingg as" height="400px" style="border-radius: 8px" />
           </div>
         </div>
       </div>
@@ -377,16 +350,17 @@
     </div>
     <div class="hero-overlay"></div>
   </div>
-  <!-- Team -->
+
+  <!-- Meet The Team -->
   <div class="container py-lg-5 py-md-4 py-2 text-center">
     <h5 class="title-small">OUR PROFESSIONALS</h5>
     <h3 class="title-big mx-0 mb-lg-5 mb-4">Meet the Team</h3>
     <div class="row team-row justify-content-center">
+      <!-- Team 1 -->
       <div class="col-lg-3 col-sm-6 team-wrap">
         <div class="team-member text-center">
           <div class="team-img">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team1.jpg"
-              alt="ava" />
+            <img src="../image/team1.jpg" alt="ava" />
             <div class="overlay">
               <div class="team-details text-center">
                 <p>
@@ -432,11 +406,11 @@
           <p>Designer</p>
         </div>
       </div>
+      <!-- Team 2 -->
       <div class="col-lg-3 col-sm-6 team-wrap mt-sm-0 mt-5">
         <div class="team-member text-center">
           <div class="team-img">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team2.jpg"
-              alt="ava" />
+            <img src="../image/team2.jpg" alt="ava" />
             <div class="overlay">
               <div class="team-details text-center">
                 <p>
@@ -482,11 +456,11 @@
           <p>Photographer</p>
         </div>
       </div>
+      <!-- Team 3 -->
       <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
         <div class="team-member text-center">
           <div class="team-img">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
-              alt="ava" />
+            <img src="../image/team3.jpg" alt="ava" />
             <div class="overlay">
               <div class="team-details text-center">
                 <p>
@@ -532,11 +506,11 @@
           <p>Designer</p>
         </div>
       </div>
+      <!-- Team 4 -->
       <div class="col-lg-3 col-sm-6 team-wrap mt-lg-0 mt-5">
         <div class="team-member text-center">
           <div class="team-img">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team4.jpg"
-              alt="ava" />
+            <img src="../image/team4.jpg" alt="ava" />
             <div class="overlay">
               <div class="team-details text-center">
                 <p>
@@ -584,6 +558,7 @@
       </div>
     </div>
   </div>
+
   <!-- Choose Us -->
   <div style="background-color: #f8f9fa">
     <div class="py-lg-5 py-md-4">
@@ -985,6 +960,46 @@
     });
   </script>
 
+  <!-- Introduction JS-->
+  <script>
+    const modal = document.getElementById("myModal");
+    const btn = document.querySelector(".video-play-icon");
+    const span = document.getElementsByClassName("close")[0];
+    const iframe = document.getElementById("youtube-video");
+
+    btn.onclick = function () {
+      iframe.src += "&autoplay=1";
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+      iframe.src = iframe.src.replace("&autoplay=1", "");
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+        iframe.src = iframe.src.replace("&autoplay=1", "");
+      }
+    }
+  </script>
+
+  <!-- Background Attchement JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    function showPopup() {
+      document.getElementById("popupVideo").style.display = "flex";
+    }
+    document
+      .getElementById("popupVideo")
+      .addEventListener("click", function () {
+        this.style.display = "none";
+      });
+  </script>
+
   <!-- Move To Top JS -->
   <script>
     // Khi người dùng cuộn xuống 20px từ đầu trang, hiển thị nút
@@ -1005,20 +1020,6 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script>
-    function showPopup() {
-      document.getElementById("popupVideo").style.display = "flex";
-    }
-    document
-      .getElementById("popupVideo")
-      .addEventListener("click", function () {
-        this.style.display = "none";
-      });
   </script>
 </body>
 

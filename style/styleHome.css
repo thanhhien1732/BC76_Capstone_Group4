@@ -733,6 +733,7 @@ body.search-active {
 
 .carousel-wrap .carousel-content p {
     font-size: 20px;
+    color: #fff;
     line-height: 30px;
     max-width: 600px;
     letter-spacing: 0.010em;
