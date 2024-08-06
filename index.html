@@ -5,6 +5,7 @@
     <link rel="shortcut icon" href="./image/logo1.png" type="image/x-icon">
     <title>Corpvision - Corporate Category Website WordPress Theme - Just another W3Layouts free WordPress Demo Sites
         site</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -47,7 +48,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Style CSS -->
+    
+        <!-- Style CSS -->
     <link rel="stylesheet" href="./style/styleHome.css">
 </head>
 
@@ -92,15 +94,14 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <h1>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.html">
                         <i class="fa-solid fa-align-right text-success"></i>
                         Corp Vision
                         <span class="logo">Vision to your Future</span>
                     </a>
                 </h1>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-                    data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false"
-                    aria-label="Toggle Navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
@@ -108,7 +109,7 @@
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav mx-lg-auto">
                         <li class="nav-item active">
-                            <a class="nav-link active" href="#">Home</a>
+                            <a class="nav-link active" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/about-page.html">About</a>
@@ -123,7 +124,7 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Blog Posts</a></li>
                                 <li><a class="dropdown-item" href="#">404 Page</a></li>
-                                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                <li><a class="dropdown-item" href="./pages/landing-page.html">Landing Page</a></li>
                                 <li><a class="dropdown-item" href="#">Elements Page</a></li>
                             </ul>
                         </li>
@@ -133,14 +134,14 @@
                     </ul>
 
                     <!-- Search -->
-                    <div class="header-search HeaderSearch">
+                    <div class="header-search">
                         <div class="control mr-3">
                             <div class="btn-material">
                                 <i class="fa-solid fa-magnifying-glass icon-search"></i>
                             </div>
                         </div>
                         <!-- full screen form controls -->
-                        <i class="fa-solid fa-xmark icon-close"></i>
+                        <i class="fa-solid fa-xmark"></i>
                         <form action="index.html" method="GET" class="search-input">
                             <input class="input-search" name="s" placeholder="Start Typing" type="text">
                         </form>
@@ -376,7 +377,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Services -->
@@ -846,7 +846,7 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer>
         <div class="py-5">
             <div class="container py-md-4">
@@ -983,11 +983,11 @@
                     $("#site-header").addClass("nav-fixed");
                     $(".nav-link").css({
                         "color": "#3f3a64",
-                        "opacity": "0.7"
+                        "opacity": "0.7",
                     });
                     $(".nav-item.active .nav-link").css({
                         "color": "#009f4d",
-                        "opacity": "0.9"
+                        "opacity": "0.9",
                     });
                     $(".mode-container").addClass("mode-container-scrolled");
                     $(".dropdown-toggle").addClass("dropdown-toggle-scrolled");
@@ -1016,7 +1016,7 @@
                 $('.input-search').focus();
             });
 
-            $('.icon-close').click(function () {
+            $('.fa-xmark').click(function () {
                 $('body').removeClass('search-active');
             });
         });
@@ -1027,6 +1027,70 @@
         document.getElementById("switchButton").onclick = function () {
             document.getElementById("myBody").classList.toggle("dark");
         };
+    </script>
+
+    <!-- Reponsive button -->
+    <script>
+        $(document).ready(function () {
+            var $navbarToggler = $('.navbar-toggler');
+            var $iconExpand = $('.icon-expand');
+            var $iconClose = $('.icon-close');
+            var $mainHeader = $('.main-header');
+            var $navbarCollapse = $('#navbarScroll');
+
+            function updateHeaderState() {
+                var isCollapsed = $navbarToggler.hasClass('collapsed');
+                var isScrolled = $(window).scrollTop() > 0;
+                var isNavbarShown = $navbarCollapse.hasClass('show');
+
+                if (isCollapsed) {
+                    $iconClose.show();
+                    $iconExpand.hide();
+                    $('body').addClass('no-scroll');
+                    $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+                } else {
+                    $iconClose.hide();
+                    $iconExpand.show();
+                    $('body').removeClass('no-scroll');
+                    if (!isScrolled) {
+                        $mainHeader.css('background', '');
+                    }
+                }
+
+                if (isScrolled) {
+                    $mainHeader.addClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', '');
+                    }
+                } else {
+                    $mainHeader.removeClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+                    }
+                }
+
+                if (isScrolled) {
+                    $mainHeader.addClass('nav-fixed');
+                    $mainHeader.css('background', '');
+                } else {
+                    $mainHeader.removeClass('nav-fixed');
+                    if (isNavbarShown) {
+                        $mainHeader.css('background', 'rgba(0, 0, 0, 0.7)');
+                    }
+                }
+            }
+
+            $navbarToggler.on('click', function () {
+                $navbarToggler.toggleClass('collapsed');
+                updateHeaderState();
+            });
+
+            $(window).on('resize scroll', function () {
+                updateHeaderState();
+            });
+
+            updateHeaderState();
+        });
     </script>
 
     <!-- Lightbox -->
